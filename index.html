@@ -3,22 +3,43 @@
 <head>
 <meta charset="utf-8">
 <title>Selamat Datang di PT.Book Mart Indonesia</title>
+<meta name="keywords" content="Bookmart.id, Bookmart, Bookmart Indonesia, TBR, Toko Buku Ritel">
+<meta name="description" content="">
+<meta name="author" content="https://plus.google.com/+ADMINBOOKMARTINDONESIA">
+<meta name="copyright" content="PT.Bookmart Indonesia">
+<meta name="robots" content="index, follow">
+<meta http-equiv="content-type" content="text/html;UTF-8">
+<meta http-equiv="cache-control" content="cache">
+<meta http-equiv="content-language" content="id">
+<meta property="og:description" content="BOOKMART.ID merupakan branding produk dari PT. BOOKMARTINDONESIA yang bergerak dalam bidang Penerbit , Percetakan, Distributor dan Toko Buku Ritel (TBR) buku berbahasa Indonesia dan buku berbahasa Asing. Kami bekerjasama dengan jaringan berbagai penerbit di indonesia untuk turut serta dalam menyebarluaskan pengetahuan melalui penerbitan dan pendistribusian buku agar dapat dinikmati pembaca dari berbagai lapisan masyarakat." />
+<!-- meta html for facebook -->
+<meta property="og:url" content="http://bookmart.id" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="PT.Book Mart Indonesia - Untuk Perubahan Yang Lebih Baik" />
+<meta property="og:description" content="BOOKMART.ID merupakan branding produk dari PT. BOOKMARTINDONESIA yang bergerak dalam bidang Penerbit , Percetakan, Distributor dan Toko Buku Ritel (TBR) buku berbahasa Indonesia dan buku berbahasa Asing. Kami bekerjasama dengan jaringan berbagai penerbit di indonesia untuk turut serta dalam menyebarluaskan pengetahuan melalui penerbitan dan pendistribusian buku agar dapat dinikmati pembaca dari berbagai lapisan masyarakat." />
+<meta property="og:image" content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
 <style>
 html,
 body { height: 100%; }
 body {
   margin: 0;
-  background: linear-gradient(#eeeeee, #cccccc);
+  background: url(images/background.jpg) no-repeat center center fixed;
   overflow: hidden;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .selector {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 140px;
-  height: 140px;
+  left: 45%;
+  top: 40%;
+  width: 256px;
+  height: 256px;
   margin-top: -70px;
   margin-left: -70px;
 }
@@ -34,7 +55,7 @@ body {
   width: 100%;
   height: 100%;
   padding: 10px;
-  background: #428bca;
+  background: url(images/logo-putih.png);
   border-radius: 50%;
   border: 0;
   color: white;
@@ -44,7 +65,7 @@ body {
   transition: all .1s;
 }
 
-.selector button:hover { background: #3071a9; }
+.selector button:hover { background: url(images/logo.png); }
 
 .selector button:focus { outline: none; }
 
@@ -82,13 +103,13 @@ body {
   border-radius: 50%;
   text-align: center;
   font-size: 1px;
-  overflow: hidden;
   cursor: pointer;
+  color: #FF9100;
   box-shadow: none;
   transition: all 0.8s ease-in-out, color 0.1s, background 0.1s;
 }
 
-.selector li input + label:hover { background: #f0f0f0; }
+.selector li input + label:hover { background: #271F9E; }
 
 .selector li input:checked + label {
   background: #5cb85c;
@@ -105,46 +126,55 @@ body {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
   font-size: 25px;
 }
+img.backgroud-head {
+    width: 100%;
+    margin: 0;
+    z-index: 0;
+    position: relative;
+    overflow: hidden;
+}
 </style>
 </head>
-
+<div>
+<img class="backgroud-head" src="images/overlay.png" />
+</div>
 <body>
 <div class='selector'>
   <ul>
     <li>
       <input id='c1' type='checkbox'>
-      <label for='c1'><a href="http://cp.bookmart.co.id"><i class="fa fa-fort-awesome"></i></a></label>
+      <label for='c1'><a href="http://cp.bookmart.co.id" data-tooltip="Sekilas Kami" target="_blank"><i class="fa fa-fort-awesome"></i></a></label>
     </li>
     <li>
       <input id='c2' type='checkbox'>
-      <label for='c2'><a href="http://www.tbr.bookmart.id"><i class="fa fa-shopping-bag"></i></a></label>
+      <label for='c2'><a href="http://www.tbr.bookmart.id" data-tooltip="Toko Buku Ritel" target="_blank"><i class="fa fa-shopping-bag"></i></a></label>
     </li>
     <li>
       <input id='c3' type='checkbox'>
-      <label for='c3'><a href="http://facebook.com/tbrbookmartindonesia" target="_blank"><i class="fa fa-facebook"></i></a></label>
+      <label for='c3'><a href="http://facebook.com/tbrbookmartindonesia" data-tooltip="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></label>
     </li>
     <li>
       <input id='c4' type='checkbox'>
-      <label for='c4'><a href="http://twitter.com/tbrbookmart" target="_blank"><i class="fa fa-twitter"></i></a></label>
+      <label for='c4'><a href="http://twitter.com/tbrbookmart" data-tooltip="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></label>
     </li>
     <li>
       <input id='c5' type='checkbox'>
-      <label for='c5'><a href="http://pinterest.com/tbrbookmart" target="_blank"><i class="fa fa-pinterest"></i></a></label>
+      <label for='c5'><a href="http://pinterest.com/tbrbookmart" data-tooltip="Pinterest" target="_blank"><i class="fa fa-pinterest"></i></a></label>
     </li>
     <li>
       <input id='c6' type='checkbox'>
-      <label for='c6'><a href="https://www.instagram.com/bookmartid/" target="_blank"><i class="fa fa-instagram"></i></a></label>
+      <label for='c6'><a href="https://www.instagram.com/bookmartid/" data-tooltip="Instagram" target="_blank"><i class="fa fa-instagram"></i></a></label>
     </li>
     <li>
       <input id='c7' type='checkbox'>
-      <label for='c7'><a href="https://www.youtube.com/user/bookmartindonesia" target="_blank"><i class="fa fa-youtube-play"></i></a></label>
+      <label for='c7'><a href="https://www.youtube.com/user/bookmartindonesia" data-tooltip="Youtube" target="_blank"><i class="fa fa-youtube-play"></i></a></label>
     </li>
     <li>
       <input id='c8' type='checkbox'>
-      <label for='c8'><i class="fa fa-newspaper-o"></i></label>
+      <label for='c8'><a href="#" data-tooltip="Whats Next?" target="_blank"><i class="fa fa-newspaper-o"></i></a></label>
     </li>
   </ul>
-  <button>Click to toggle the menus</button>
+  <button></button>
 </div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><script>var nbOptions = 8;
 var angleStart = -360;
