@@ -134,6 +134,9 @@ img.backgroud-head {
 }
 </style>
 </head>
+<div>
+<img class="backgroud-head" src="images/overlay.png" />
+</div>
 <body>
 <div class='selector'>
   <ul>
